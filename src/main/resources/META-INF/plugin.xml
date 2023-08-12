@@ -15,4 +15,20 @@
     <applicationListeners>
         <listener class="com.github.gabrielgomes94.phpstormtestnameplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+
+    <actions>
+        <action
+                id="MyAction"
+                text="My Action Name"
+                class="com.github.gabrielgomes94.phpstormtestnameplugin.editor.EditorAreaIllustration"
+        >
+            <override-text place="MainMenu" text="Informações do Caret"/>
+
+            <add-to-group
+                    group-id="ToolsMenu"
+                    relative-to-action="GenerateJavadoc"
+                    anchor="after"/>
+
+        </action>
+    </actions>
 </idea-plugin>
