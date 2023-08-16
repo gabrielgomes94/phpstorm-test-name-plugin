@@ -40,5 +40,13 @@
                 anchor="right"
                 factoryClass="com.github.gabrielgomes94.phpstormtestnameplugin.toolWindow.CalendarToolWindowFactory"
         />
+
+        <toolWindow
+                id="PhpUnit Test Names"
+                secondary="true"
+                icon="AllIcons.Toolwindows.WebToolWindow"
+                anchor="right"
+                factoryClass="com.github.gabrielgomes94.phpstormtestnameplugin.toolWindow.PhpUnitTestNamesFactory"
+        />
     </extensions>
 </idea-plugin>
